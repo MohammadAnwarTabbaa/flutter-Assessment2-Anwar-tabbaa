@@ -13,8 +13,8 @@ const _forecastUrl = '$_baseUrl/forecast.json';
 
 class DioClient with ChangeNotifier {
   final Dio _dio = Dio();
-  final itemCount = 5;
-  List<ForcastWreatherModel> forcastlist = [];
+  
+
   CurrentWeatherModel currentWeather = CurrentWeatherModel();
   ForcastWreatherModel forecastList = ForcastWreatherModel();
 

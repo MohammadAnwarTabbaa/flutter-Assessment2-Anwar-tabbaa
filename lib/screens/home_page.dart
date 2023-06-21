@@ -10,8 +10,6 @@ enum TemperatureUnit {
   fahrenheit,
 }
 
-
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -29,8 +27,6 @@ class _ForecastScreenState extends State<HomeScreen> {
     if (weatherProvider.currentWeather.location == null) {
       weatherProvider.getCurrentWeather();
     }
-    ScrollController scrollController = ScrollController();
-    scrollController.addListener(() {});
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
