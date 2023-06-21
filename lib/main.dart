@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (ctx) => DioClient())],
-      child: TabBarScreen()
+      child: const TabBarScreen()
     );
   }
 }

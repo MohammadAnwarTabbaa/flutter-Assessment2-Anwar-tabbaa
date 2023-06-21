@@ -10,8 +10,7 @@ enum TemperatureUnit {
   fahrenheit,
 }
 
-const String defaultImage =
-    'https://cdn.dribbble.com/users/162970/screenshots/6456084/casual-bounce.gif';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -45,7 +44,7 @@ class _ForecastScreenState extends State<HomeScreen> {
                 : [
                     Image.network(
                         'http:${weatherProvider.currentWeather.current?.condition?.icon}' ??
-                            defaultImage,
+                            '',
                         width: 150,
                         height: 100),
                     const SizedBox(height: 20),
