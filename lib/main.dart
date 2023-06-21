@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assessment2_anwar_tabbaa/API/dio_client.dart';
 import 'package:flutter_assessment2_anwar_tabbaa/screens/home_page.dart';
+import 'package:flutter_assessment2_anwar_tabbaa/screens/tab_bar_screen.dart';
 // import 'package:rest_api/screens/home_page.dart';
 import 'package:provider/provider.dart';
 
@@ -16,13 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (ctx) => DioClient())],
-      child: MaterialApp(
-        title: 'Flutter Assessment 2',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomeScreen(),
-      ),
+      child: TabBarScreen()
     );
   }
 }
